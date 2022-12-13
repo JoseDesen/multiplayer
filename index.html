@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Menu de jogos</title>
+		<style>
+			a{
+				font-size:50px;
+				text-decoration:none;
+				}
+		</style>
+		<script>
+			var nome=prompt("qual eh seu nome");
+			var j1=sessionStorage.getItem('j1');
+			var j2=sessionStorage.getItem('j2');
+			if(j1==null){
+			sessionStorage.setItem('j1', nome);
+			sessionStorage.setItem('usuario', 'j1');
+			} else if(j2==null){
+				sessionStorage.setItem('j2', nome);
+				sessionStorage.setItem('usuario', 'j2');
+			}
+		</script>
+	</head>
+	<body>
+		
+</body>
+</html>

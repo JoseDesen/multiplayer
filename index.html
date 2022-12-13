@@ -10,14 +10,14 @@
 		</style>
 		<script>
 			var nome=prompt("qual eh seu nome");
-			var j1=sessionStorage.getItem('j1');
-			var j2=sessionStorage.getItem('j2');
+			var j1=localStorage.getItem('j1');
+			var j2=localStorage.getItem('j2');
 			if(j1==null){
-			sessionStorage.setItem('j1', nome);
-			sessionStorage.setItem('usuario', 'j1');
+			localStorage.setItem('j1', nome);
+			localStorage.setItem('usuario', 'j1');
 			} else if(j2==null){
-				sessionStorage.setItem('j2', nome);
-				sessionStorage.setItem('usuario', 'j2');
+				localStorage.setItem('j2', nome);
+				localStorage.setItem('usuario', 'j2');
 			}
 		</script>
 	</head>

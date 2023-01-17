@@ -1,0 +1,11 @@
+<div id="printed"></div>
+
+<script >
+var text_print = new XMLHttpRequest();
+        text_print.open("GET", "https://josedesen.github.io/login/Teste.txt", true);
+        text_print.onload = function (){
+            console.log( text_print.responseText.slice(0, text_print.responseText.indexOf("\n")) ); };
+        text_print.send();
+
+    document.getElementById("printed").innerHTML=text_print
+   </script>

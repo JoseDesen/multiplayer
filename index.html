@@ -8,8 +8,12 @@
 				text-decoration:none;
 				}
 		</style>
-		<script>
-			var nome=prompt("qual eh seu nome:");
+		<script type="text/javascript" >
+{
+  var strTest =prompt("nome");
+  <%Session["controlID"] = "'+ strTest +'";%>
+}
+			var nome=strTest;
 			var j1=sessionStorage.getItem('j1');
 			var j2=sessionStorage.getItem('j2');
 			if(j1==null){
